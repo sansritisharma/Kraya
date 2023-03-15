@@ -1,0 +1,149 @@
+.card {
+    background-color: $white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    flex: 1 1 25%;
+    min-width: 304px;
+    position: relative;
+    max-width: 304px;
+    min-height: 416px; 
+
+    &:hover {
+        box-shadow: 10px 22px 24px #463f5f1a;
+        transform: scale(1.03);
+        transition-duration: 0.3s;
+    }
+
+    .bxs-heart {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        
+        &::before {
+            font-size: 20px;
+            color: #FF3465;
+        }
+    }
+
+    .bx-heart {
+        // display: block;
+        // text-align: right;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+
+        &::before {
+            font-size: 20px;
+            color: $cement;
+        }
+    }
+
+    .new-label {
+        background-color: #FF3465;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        color: #fff;
+        padding: 8px 3px;
+        display: inline-block;
+        min-width: 40px;
+        text-align: center;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+    }
+
+    .card_image {
+        width: auto;
+        height: 208px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    &-content {
+        margin-left: 33px;
+        font-size: sizes(fs-16);
+        line-height: 24px;
+
+        .prod-name {
+            margin-bottom: 12px;
+        }
+
+        .rating {
+            margin-bottom: 2px;
+
+            .bxs-star {
+                color: #FF3465;
+                &::before {
+                    font-size: 20px;
+                }
+            }
+
+            .reviews {
+                color: $rock;
+            }
+        }
+
+        .price {
+            @include flex_props(row,'', baseline, 13px);
+            margin-bottom: 32px;
+
+
+            &-new {
+                color: $grey;
+                font-size: sizes(fs-20);
+                font-weight: weights(semi);
+            }
+
+            &-orignal {
+                color: $rock;
+                text-decoration: line-through;
+            }
+
+            .discount {
+                color: $grey;
+                font-weight: weights(semi);
+            }
+        }
+
+        .btns {
+            @include flex_props(row, null, null, 13px); 
+            margin-bottom: 20px;
+
+            .add-to-cart  {
+                border: none;
+                outline: none;
+                background: #6f559a;
+                padding: 5px 10px;
+                color: $white;
+                border-radius: 5px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .buy-now {
+                @extend .add-to-cart;
+            }
+
+            .btn {
+                &:hover {
+                    transform: scale(1.03);
+                    transition-duration: 0.3s;
+                }
+            
+            }
+        }
+        .add-to-compare {
+            padding: 10px 0;
+            font-family: 'Alegreya SC', sans-serif;
+            margin-bottom: 20px;
+        }
+    }
+
+    
+}
+
+

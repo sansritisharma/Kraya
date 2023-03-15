@@ -1,0 +1,80 @@
+.filters {
+    min-width: 304px;
+    max-width: 304px;
+    background-color: $white;
+    height: fit-content;
+    @include flex_props(column, null, null, 0px);
+
+    section {
+    box-shadow: 0px 2px 4px $shadow;
+        padding: 17px 23px;
+        position: relative;
+    }
+
+    .bxs-chevron-down, .bxs-chevron-up {
+        text-align: right;
+        position: absolute;
+        right: 10px;
+        top: 0px;
+    }
+
+    .cross-icon {
+        padding-right: 15px;
+        cursor: pointer;
+    }
+
+
+    .accordion-content {
+            @extend .d-flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+
+            .brand-item {
+                font-size: sizes(fs-13);
+                flex: 1 1 50%;
+                margin-bottom: 10px;
+            }
+    }
+
+    .price  {
+        span {
+           display: block;    
+        }
+    }
+    
+    &-column {
+        padding: 17px 23px;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat( auto-fit, minmax(75px, 1fr) );
+
+        .title {
+            grid-column: 1/3;
+            grid-row: 1;
+            padding: 0px;
+            color: $grey;
+            font-size: sizes(fs-16);
+            font-weight: weights(semi);
+        }
+
+        .clear-all {
+            padding: unset;
+            color: $pink;
+            font-size: sizes(fs-13);
+            font-weight: weights(semi);
+            text-align: right;
+        }
+
+        .ph-brand {
+            width:62px ;
+            text-align: center;
+            padding: 5px 8px;
+            margin-top: 5px;
+            font-size: sizes(fs-12);
+            background-color: $shadow;
+            border-radius: 2px;
+            margin-right: 15px;
+        }
+    }
+    
+}

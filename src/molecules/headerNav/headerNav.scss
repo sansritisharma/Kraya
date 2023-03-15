@@ -1,0 +1,27 @@
+.header {
+    &__Nav {
+        background-color: $white;
+        color: $grey;
+        @include flex_props(row, space-between, center, 10.4%);
+        padding: 24px 64px;
+
+        &_logo {
+            font-weight: weights(semi);
+            border: $black 3px solid;
+            padding: 8px 25px;
+            font-size: 20px;
+        }
+
+        &_list {
+            width: 57.5%;
+            @include flex_props(row, space-around, center, 6.2%);
+            font-size: sizes(fs-14);
+            font-weight: weights(semi);
+        }
+
+        i::before {
+            font-size: sizes(fs-20);
+            font-weight: weights(bold);
+        }
+    }
+}

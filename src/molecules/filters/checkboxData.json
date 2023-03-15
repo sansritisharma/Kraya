@@ -1,0 +1,42 @@
+[
+    {
+        "name": "apple",
+        "label": "Apple",
+        "value": "apple"
+    },
+    {
+        "name": "samsung",
+        "label": "Samsung",
+        "value": "samsung"
+    },
+    {
+        "name": "asus",
+        "label": "Asus",
+        "value": "Asus"
+    },
+    {
+        "name": "lg",
+        "label": "LG",
+        "value": "LG"
+    },
+    {
+        "name": "lenovo",
+        "label": "Lenovo",
+        "value": "Lenovo"
+    },
+    {
+        "name": "honor",
+        "label": "Honor",
+        "value": "Honor"
+    },
+    {
+        "name": "xiaomi",
+        "label": "Xiaomi",
+        "value": "Xiaomi"
+    },
+    {
+        "name": "meizu",
+        "label": "Meizu",
+        "value": "Meizu"
+    }
+]

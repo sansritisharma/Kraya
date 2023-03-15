@@ -1,0 +1,51 @@
+.header {
+  &__profile {
+    @include flex_props(row, flex-end, center, null);
+    background-color: $navy-blue;
+    font-size: sizes(fs-12);
+    padding: 13px 58px;
+
+    .btn-top_nav {
+      @include flex_props(row, center, center, 10px);
+      color: $ash;
+      border-right: 1px solid $ash;
+      padding: 0px 18px;
+
+      .wish-fix, .cart-count {  
+          position: relative;
+      }
+
+
+      &:nth-child(3) {
+        border-right: none;
+      }
+
+      i::before {
+        font-size: 20px;
+      }
+    }
+  }
+
+  // TOAST STYLES
+
+  .Toastify__toast-container--top-right {
+    top: 43px;
+  }
+
+  .Toastify__toast-theme--dark {
+    background-color: #2D323D;
+
+    &.Toastify__toast {
+      width: 311px;
+      height: 104px;
+    }
+
+    .Toastify__toast-body {
+      color: #B7BDC1;
+      font-size: 16px;
+      line-height: 32px;
+      font-weight: 700;
+    }
+  }
+
+}

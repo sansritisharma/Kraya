@@ -1,0 +1,43 @@
+.footer__top {
+    font-size: sizes(fs-13);
+    padding-bottom: 14px;
+    border-bottom: 1px solid $cement;
+    @extend .d-flex;
+
+    .stay-in-touch {
+        margin-right: 20px;
+        h3 {
+            font-size: sizes(fs-20);
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: sizes(fs-13);
+            opacity: 0.6;
+        }
+    }
+
+
+    .subscribe-mail-btn {
+        @include flex_props(row, '','',120px);
+        padding: 11px 23.5px 8px 23.5px;
+        border: 1px solid $cement;
+        margin-right: 550px;        //change in % or wrap in 2 diff containers
+
+        .subscribe {
+            color: rgba($white, 0.6);
+            font-weight: weights(semi);
+        }
+    }
+
+    .follow-kraya {
+        @extend .stay-in-touch;
+    }
+
+    .socials {
+        @include flex_props(row, space-between, center, 20%);
+
+        i::before {
+            font-size: sizes(fs-32);
+        }
+    }
+}

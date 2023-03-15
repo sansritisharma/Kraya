@@ -1,0 +1,58 @@
+.main {
+    background-color: $ash;
+    padding: 0 64px;
+    padding-top: 36px;
+
+    .filter-wrapper {
+        .home {
+            margin-bottom: 28px;
+        }
+    }
+
+    .strip {
+        @extend .d-flex;
+        justify-content: space-between;
+        margin-bottom: 28px;
+
+        .home {
+            font-size: sizes(fs-13);
+        }
+
+        .showing {
+            font-size: sizes(fs-16);
+            font-weight: weights(semi);
+        }
+
+        .sort-by {
+            font-size: sizes(fs-13);
+            @extend .d-flex;
+            width: 384px;
+            justify-content: space-between;
+
+            .highlight {
+                color: $pink;
+                padding-bottom: 5px;
+                border-bottom: 2px solid $pink;
+            }
+        }
+    }
+
+    &-wrapper {
+        @extend .d-flex;
+        column-gap: 32px;
+
+        .card-container {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .card-inner-container {
+            background-color: $ash;
+            @include flex_props(row, null, null, 32px);
+            flex-wrap: wrap;
+            height: 100%;
+        }
+    }
+    
+}
+
